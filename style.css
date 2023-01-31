@@ -10,6 +10,8 @@ html, body
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 body
 {
@@ -25,47 +27,36 @@ main
     position: relative;
 }
 
-h3
+p
 {
-    border: 2px solid grey;
-    border-radius: 40px;
+    
+    border: 1px solid grey;
+    border-radius: 10px;
     width: fit-content;
-    padding: 10px;
+    padding: 6px;
+    font-size: 20px;
 }
-section.screen
+section.screen img
 {
+    left: 25%;
+    top: 2%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    height:800px;
-    width: 800px;
-    background: url(/images/background.png) no-repeat ;
+    width: 50%;
+    height: 76%;
 }
 iframe#homeScreen
 {
-    width: 755px;
-    height: 478px;
-    left: 24px;
-    top: 20px;
+    width: 48%;
+    height: 53vh;
+    left:26%;
+    top: 3.5vh;
     border-radius: 15px;
     border: 5px solid black;
     background-size: cover;
     position: relative;
 }
-button.btn
-{
-    border: 1px solid rgb(195, 190, 190);
-    border-radius: 20px;
-    background-color: white; 
-}
-button.btn:hover
-{
-   transform: scale(1.5);
-   color: black;
-   transition: 0.5s ;
-   border: 1px solid rgb(1, 14, 57);
-}
+
+
 
 header
 {
@@ -76,30 +67,13 @@ header
 {
     width: 0px;
 }
-@media only screen and (max-width: 800px) 
+@media only screen and (max-width: 770px) 
 {
 
-    section.screen {
-        position: absolute;
-        left: 65%;
-        top: 40%;
-        transform: translate(-50%,-50%);
-        height: 600px;
-        width: 400px;
-        background: url(/images/cellphone.jpg) no-repeat;
-    }
-
-    iframe#homeScreen {
-        width: 218px;
-        height: 480px;
-        left: 14px;
-        top: 10px;
-        border-radius: 30px;
-        border: 5px solid black;
-        background-size: cover;
-        position: relative;
-    }
+    
 }
 
-  
-  
+@media (min-width: 576px) 
+{ ... }
+
+@media (min-width: 768px) { ... }
